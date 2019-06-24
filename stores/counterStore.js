@@ -1,20 +1,21 @@
-import Store from './store';
+import Store from './Store'
 
 class CounterStore extends Store {
+
   constructor() {
     super(0);
   }
-  
+
   getState() {
     return this.state;
   }
-  
-  incrementCount() {
-    this.state ++;
+
+  increment() {
+    this.state++;
   }
-  
-  decrementCount() {
-    this.state --;
+
+  decrement() {
+    this.state--;
   }
 }
 
