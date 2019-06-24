@@ -10,7 +10,9 @@ class App extends React.Component {
     };
   }
   componentDidMount () {
-    // Your implementation here.
+     this.removeListener = counterStore.addListener(
+      counter => this.setState({counter: counter})
+    );
   }
   componentWillUnmount () {
     // Your implementation here.
