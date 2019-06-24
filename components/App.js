@@ -32,10 +32,10 @@ class App extends React.Component {
       <div className='app'>
         <h1 className='counter'>{this.state.counter}</h1>
         <div className='actions'>
-          <button className='decrement'>
+          <button className='decrement' onClick={this.handleDecrement}>
             -
           </button>
-          <button className='increment'>
+          <button className='increment' onClick={this.handleDecrement}>
             +
           </button>
         </div>
