@@ -15,7 +15,17 @@ class App extends React.Component {
     );
   }
   componentWillUnmount () {
-    // Your implementation here.
+     this.removeListener();
+  }
+
+  handleIncrement(e) {
+    e.preventDefault();
+    actions.increment();
+  }
+
+  handleDecrement(e) {
+    e.preventDefault();
+    actions.decrement();
   }
   render () {
     return (
