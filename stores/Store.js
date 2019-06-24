@@ -10,6 +10,11 @@ class Store {
       this.listeners = this.listeners.filter(cListener => cListener !== listener)
     return removeListener;
   }
+  
+  setState(newState) {
+    this.state = newState;
+    this.listeners.forEach(listener => listener(newState));
+  }
 }
 
 module.exports = Store;
