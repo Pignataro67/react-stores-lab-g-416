@@ -1,5 +1,6 @@
 import counterStore from '../stores/counterStore';
 
 module.exports = {
-  increment: () => 
+  increment: () => counterStore.increment,
+  decrement: () => counterStore.decrement
 };
