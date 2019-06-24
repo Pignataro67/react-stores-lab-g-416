@@ -10,7 +10,11 @@ class CounterStore extends Store {
   }
   
   incrementCount() {
-    
+    this.state ++;
+  }
+  
+  decrementCount() {
+    this.state --;
   }
 }
 
