@@ -21,3 +21,5 @@ class CounterStore extends Store {
     this.state--;
   }
 }
+
+module.exports = new CounterStore();
