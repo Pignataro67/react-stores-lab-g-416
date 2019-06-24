@@ -8,6 +8,10 @@ class CounterStore extends Store {
   getState() {
     return this.state;
   }
+  
+  incrementCount() {
+    
+  }
 }
 
 module.exports = new CounterStore();
