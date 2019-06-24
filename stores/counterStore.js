@@ -1,7 +1,4 @@
-
-module.exports = new CounterStore();
-
-import Store from './store'
+import Store from './store';
 
 class CounterStore extends Store {
 
