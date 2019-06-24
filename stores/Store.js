@@ -15,6 +15,10 @@ class Store {
     this.state = newState;
     this.listeners.forEach(listener => listener(newState));
   }
+  
+   getState() {
+    return this.state;
+  }
 }
 
 module.exports = Store;
