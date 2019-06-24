@@ -1,4 +1,6 @@
 const React = require('react');
+import counterStore from '../stores/counterStore'
+import actions from '../actions'
 
 class App extends React.Component {
   constructor (props) {
