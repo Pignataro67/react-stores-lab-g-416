@@ -6,7 +6,7 @@ class CounterStore extends Store {
   }
   
   getState() {
-    return this.state
+    return this.state;
   }
 }
 
