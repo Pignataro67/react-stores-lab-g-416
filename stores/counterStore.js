@@ -1,4 +1,7 @@
-import Store from './Store'
+
+module.exports = new CounterStore();
+
+import Store from './store'
 
 class CounterStore extends Store {
 
@@ -18,5 +21,3 @@ class CounterStore extends Store {
     this.state--;
   }
 }
-
-module.exports = new CounterStore();
