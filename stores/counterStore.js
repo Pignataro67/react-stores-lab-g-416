@@ -1,6 +1,6 @@
 import Store from './store';
 
-class CounterStore {
+class CounterStore extends Component {
   // Your implementation here.
   // Hint: extend the Store class!
 }
